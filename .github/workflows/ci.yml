@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'
-        distribution: 'adoptopenjdk'  # This specifies the JDK distribution
+        distribution: 'adoptium'  # Updated to adoptium, which is the successor to AdoptOpenJDK
 
     - name: Cache Gradle dependencies
       uses: actions/cache@v2
