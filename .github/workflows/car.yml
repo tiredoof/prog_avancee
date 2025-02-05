@@ -1,4 +1,4 @@
-name: CI
+name: Main
 on:
   - pull_request
 jobs:
@@ -22,5 +22,5 @@ jobs:
         working-directory: .
         run: |
           export SHELL=/bin/bash
-          docker build -t rentalservice .
+          docker build -t prog_avancee .
           docker images
