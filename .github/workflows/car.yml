@@ -30,11 +30,3 @@ jobs:
           export SHELL=/bin/bash
           ./gradlew build
    
-
-  
-      - name: Docker images
-        working-directory: .
-        run: |
-          export SHELL=/bin/bash
-          docker build -t prog-avancee .
-          docker images
