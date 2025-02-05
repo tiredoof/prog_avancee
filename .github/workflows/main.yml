@@ -1,4 +1,4 @@
-name: CI
+alname: CI
 
 on:
   push:
@@ -25,9 +25,9 @@ jobs:
       - name: Build and test
         working-directory: car-rental
         run: |
-          chmod +x ./gradlew
+          chmod +x ./car-rental/gradlew
           export SHELL=/bin/bash
-        # ./gradlew build
+          ./car-rental/gradlew build
 
       - name:  Post run action
         run: |
