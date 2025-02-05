@@ -26,9 +26,9 @@ jobs:
       - name: Build and test
         working-directory: .
         run: |
-         export SHELL=/bin/bash
+          chmod +x ./gradlew
+          export SHELL=/bin/bash
           ./gradlew build
-
    
 
   
