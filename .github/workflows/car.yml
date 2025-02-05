@@ -24,7 +24,7 @@ jobs:
 
       # Désactivation de l'étape "Build and test"
       - name: Build and test
-        working-directory: rentCar
+        working-directory: .
         run: |
          export SHELL=/bin/bash
           ./gradlew build
