@@ -22,7 +22,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      # Désactivation de l'étape "Build and test"
       - name: Build and test
         working-directory: car-rental
         run: |
@@ -30,7 +29,7 @@ jobs:
           export SHELL=/bin/bash
         # ./gradlew build
 
-      - name:  Post run actionn
+      - name:  Post run action
         run: |
           echo "Simulating successful build..."
           sleep 3
