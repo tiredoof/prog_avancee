@@ -22,5 +22,5 @@ jobs:
         working-directory: .
         run: |
           export SHELL=/bin/bash
-          docker build -t rentalservice .
+          docker build -t prog-avancee .
           docker images
