@@ -18,3 +18,9 @@ jobs:
           chmod +x ./gradlew
           export SHELL=/bin/bash
           ./gradlew build
+      - name: Docker images
+        working-directory: .
+        run: |
+          export SHELL=/bin/bash
+          docker build -t rentalservice .
+          docker images
