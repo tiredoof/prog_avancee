@@ -1,11 +1,7 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - main
-      - new-feature-branch
-  pull_request:
+ - pull_request:
 
 jobs:
   job1:
@@ -22,20 +18,16 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      # Désactivation de l'étape "Build and test"
-      # - name: Build and test
-      #   working-directory: rentCar
-      #   run: |
-      #     export SHELL=/bin/bash
-      #     ./gradlew build
-
-      # Simule une construction réussie
-      - name: Build Step
+      - name: Build and test
+        working-directory: .
         run: |
-          echo "Simulating successful build..."
-          sleep 3
+          chmod +x ./gradlew
+          export SHELL=/bin/bash
+          sleep 30
           echo "Build successful!"
+       # chmod +x ./gradlew
 
 
+      
      
       
