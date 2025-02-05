@@ -12,12 +12,15 @@ jobs:
         with:
           java-version: '23'
           distribution: 'adopt'
+
       - name: Build and test
-        working-directory: .
+        working-directory: rentCar
         run: |
           chmod +x ./gradlew
           export SHELL=/bin/bash
           ./gradlew build
+
+        
       - name: Docker images
         working-directory: .
         run: |
