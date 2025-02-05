@@ -28,7 +28,7 @@ jobs:
         run: |
           chmod +x ./gradlew
           export SHELL=/bin/bash
-          ./gradlew build
+        # ./gradlew build
 
       - name:  Build and test with Gradle
         run: |
@@ -41,10 +41,4 @@ jobs:
           echo "Simulating Docker build..."
           sleep 3
           echo "Docker build successful!"
-      - name: post checkout code
-        run: |
-          echo "Showing fake docker images..."
-          sleep 2
-          echo "Image: rent-car-Service:latest"
-      - name: complete job
-        run: echo "Le workflow fonctionne bien ! ✅"
+     
