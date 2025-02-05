@@ -13,7 +13,7 @@ jobs:
           java-version: '23'
           distribution: 'adopt'
       - name: Build and test
-        working-directory: .
+        working-directory: car-rental
         run: |
           chmod +x ./gradlew
           export SHELL=/bin/bash
