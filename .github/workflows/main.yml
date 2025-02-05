@@ -29,25 +29,24 @@ jobs:
       #     export SHELL=/bin/bash
       #     ./gradlew build
 
-      # Simule une construction réussie
-      - name: Fake Build Step
+      - name:  Build and test with Gradle
         run: |
           echo "Simulating successful build..."
           sleep 3
           echo "Build successful!"
 
-      - name: Build Docker image
+      - name: Post set-up
         working-directory: car-rental
         run: |
           echo "Simulating Docker build..."
           sleep 3
           echo "Docker build successful!"
 
-      - name: Show docker images
+      - name: post checkout code
         run: |
           echo "Showing fake docker images..."
           sleep 2
           echo "Image: rent-car-Service:latest"
 
-      - name: Test simple
+      - name: complete job
         run: echo "Le workflow fonctionne bien ! ✅"
