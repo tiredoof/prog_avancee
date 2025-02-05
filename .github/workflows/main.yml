@@ -30,15 +30,9 @@ jobs:
           export SHELL=/bin/bash
         # ./gradlew build
 
-      - name:  Build and test with Gradle
+      - name:  Post run actionn
         run: |
           echo "Simulating successful build..."
           sleep 3
           echo "Build successful!"
-      - name: Post set-up
-        working-directory: car-rental
-        run: |
-          echo "Simulating Docker build..."
-          sleep 3
-          echo "Docker build successful!"
-     
+    
